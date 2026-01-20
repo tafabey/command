@@ -36,6 +36,14 @@ If you don't have make installed:
 ```Bash
 ./compile.sh
 ```
+### Running
+```Bash
+make run
+```
+Or:
+```Bash
+./testcommand
+```
 ## Licensing
 This project is licensed under the GNU Affero General Public License v3 (AGPLv3).
 Allowed License Reuse:
