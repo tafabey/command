@@ -4,7 +4,9 @@
 ## What is `command()`?
 - `command()` is a small but powerful FOSS C++ function.
 - Its formula is basically: **system()-like syntax + fork()/exec() safety = command()**
-- Designed to provide an easy, readable, shell-free way to run system commands.
+- Designed to provide an easy, readable, shell-free way to run system commands.i
+- It is single .hpp file function, so it is very easy for adding it to your C++ project:
+- Just copy [`command.hpp`](command.hpp) to your project directory, write ```include "command.hpp``` to your C++ file and it is ready to use!
 
 ## Philosophy / History
 While developing my project [`pacostrap`](https://github.com/npc-gnu/pacostrap), I realized:
@@ -26,6 +28,14 @@ int main() {
     return 0;
 }
 ```
+### Compiling
+```Bash
+make
+```
+If you don't have make installed:
+```Bash
+./compile.sh
+```
 ## Licensing
 This project is licensed under the GNU Affero General Public License v3 (AGPLv3).
 Allowed License Reuse:
@@ -37,10 +47,5 @@ You may reuse this function in projects that are licensed under copyleft (strong
    - OSL
    - RTPL
    - MPL
-   - Not Allowed Without Permission:
-    Projects using non-copyleft permissive licenses (MIT, BSD, Apache)
-If you want to use command() in such a context, please contact me at:
- 8.000.000zimbabwe_dolar@protonmail.com
-I do not support the use of my code by corporations that exploit FOSS or contribute to closed platforms like macOS or FreeBSD.
-I believe in software freedom — not as a business model, but as a moral stance.  
-If that makes me "less pragmatic", so be it.  
+For more detail, please look at [LICENSE file](LICENSE.md)
+
