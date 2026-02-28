@@ -6,7 +6,6 @@
 - Its formula is basically: **system()-like syntax + fork()/exec() safety = command()**
 - Designed to provide an easy, readable, shell-free way to run system commands.i
 - It is single .hpp file function, so it is very easy for adding it to your C++ project:
-- Just copy [`command.hpp`](command.hpp) to your project directory, write ```include "command.hpp``` to your C++ file and it is ready to use!
 
 ## Philosophy / History
 While developing my project [`pacostrap`](https://github.com/npc-gnu/pacostrap), I realized:
