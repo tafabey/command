@@ -17,33 +17,34 @@ So I wrote my own wrapper — `command()` — a minimal, readable and safe way t
 
 ## Example Usage
 ```cpp
-#include <iostream> // for cout, main, return function
-#include <string> // for string valuable
-#include "command.hpp" // for my own super duper awesome command function
+#include <command.hpp> // for my own super duper awesome command function
+
 int main() {
-    std::cout << "Enter directory:\n";
-    std::string directory;
-    std::cin >> directory;
-    command("ls -a " + directory);
+    command("ls")
     return 0;
 }
 ```
-### Compiling
+### Compiling library
 ```Bash
 make
+sudo make install
 ```
-If you don't have make installed:
+
+### Compiling your own code with library
 ```Bash
-./compile.sh
+g++ main.cpp -lcommand -o main.elf
 ```
+
 ### Running
 ```Bash
-make run
+./main.elf
 ```
-Or:
+
+### Uninstalling library
 ```Bash
-./testcommand
+sudo make uninstall
 ```
+
 ## Licensing
 This project is licensed under the GNU Affero General Public License v3 (AGPLv3).
 Allowed License Reuse:
