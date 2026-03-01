@@ -19,7 +19,7 @@ So I wrote my own wrapper — `command()` — a minimal, readable and safe way t
 #include <command.hpp> // for my own super duper awesome command function
 
 int main() {
-    command("ls")
+    command("ls");
     return 0;
 }
 ```
