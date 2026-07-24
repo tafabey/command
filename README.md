@@ -20,13 +20,19 @@
 
 ## Installation & Uninstallation
 
-**Install System-Wide:**
+### 1. Clone the Repository
+```bash
+git clone https://github.com/tafabey/command.git
+cd command
+```
+
+### 2. Install System-Wide
 ```bash
 make
 sudo make install
 ```
 
-**Uninstall:**
+### 3. Uninstall
 ```bash
 sudo make uninstall
 ```
@@ -62,4 +68,4 @@ g++ main.cpp -lcommand -o main.elf
 
 This project is licensed under the **GNU Affero General Public License v3 (AGPLv3)**. Due to the terms of the original project, it must remain under the AGPLv3 license.
 
-For more details, please check the [LICENSE](LICENSE) file.
+For more details, please check the [LICENSE](LICENSE.md) file.
