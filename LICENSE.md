@@ -1,4 +1,5 @@
 Copyright (C) 2026 Muhammed Mustafa Demir / tafabey
+
 Copyright (C) 2025 npc-gnu
 
 # GNU AFFERO GENERAL PUBLIC LICENSE
